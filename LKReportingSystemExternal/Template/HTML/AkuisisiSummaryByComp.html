@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+
+    <style type="text/css">
+        .tblAlternate tr:nth-child(even) td {
+            background-color: #EFF0F1;
+        }
+
+        .defaultBGcolor {
+            background-color: #FFFFFF !important;
+        }
+        .auto-style2 {
+            height: 23px;
+        }
+        .auto-style3 {
+            height: 20px;
+            width: 5px;
+        }
+    </style>
+
+</head>
+<body>
+    <form id="form1" runat="server">
+
+        <div>
+            <table style="font-family: Arial; font-size: 10px; border-spacing: 0; border-collapse: collapse;">
+                <tr style="font-family: Calibri; font-size: 16px; color: black; text-align: center">
+                    <td colspan="21"><b>Akuisisi Summary By Company</b></td>
+                </tr>
+
+                <tr style="font-family: Calibri; font-size: 12px; color: black; text-align: center">
+                    <td colspan="21"><b>@AsOf</b></td>
+                </tr>
+
+                <tr style="height:20px">
+                    <td colspan="21"></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2" style="width:10px; min-width:10px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; border:.5pt solid black;">No</td>
+                    <td rowspan="2" style="width:200px; min-width:200px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Nama Perusahaan</td>
+
+                    <td colspan="2" style="text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Perencanaan</td>
+                    
+                    <td colspan="2" style="text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Pemeriksaan</td>
+                    
+                    <td colspan="6" style="text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Proses Akuisisi</td>
+
+                    <td colspan="6" style="text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Akuisisi Selesai</td>
+
+                    <td rowspan="2" style="width:50px; min-width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Seluruh Akuisisi</td>
+                    <td rowspan="2" style="width:50px; min-width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Seluruh Area</td>
+                    <td rowspan="2" style="width:50px; min-width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Seluruh Nilai</td>
+                </tr>
+
+                <tr>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Area</td>
+
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Area</td>
+                    
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Area</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Sudah Dibayar</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Sudah Jatuh Tempo</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Belum Jatuh Tempo</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Nilai</td>
+                    
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Area</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Sudah Dibayar</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Sudah Jatuh Tempo</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Belum Jatuh Tempo</td>
+                    <td style="width:50px; text-align:center; background-color:#E0E0E0; font-weight:bold; padding:5px 15px 5px 15px; height:20px; border:.5pt solid black;">Total Nilai</td>
+                </tr>
+
+                @ContentReport
+                
+                <tr style="height:20px">
+                    <td colspan="21"></td>
+                </tr>
+                
+                <tr style="font-family: Calibri; font-size: 10px; color: black; text-align: center">
+                    <td colspan="21">-- End of Report --</td>
+                </tr>
+
+                <tr style="font-family: Calibri; font-size: 10px; color: black; text-align: left">
+                    <td colspan="21">Printed by : @PrintedBy</td>
+                </tr>
+            </table>
+            
+            <br />
+        </div>
+
+    </form>
+</body>
+</html>

@@ -1,0 +1,166 @@
+﻿<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>White Sheep Never Give Up</title>
+    <style type="text/css">
+        .tblAlternate tr:nth-child(even) td {
+            background-color: #EFF0F1;
+        }
+
+        .defaultBGcolor {
+            background-color: #FFFFFF !important;
+        }
+    </style>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <table style="font-family: Arial; font-size: 16px; color: #464646; width: 100%">
+                <tr style="text-align: center">
+                    <td colspan="21" style="max-width: 500px; text-align: center"><b><u>EXECUTIVE PROJECT SUMMARY</u></b></td>
+                </tr>
+            </table>
+            <br />
+            <table style="font-family: Arial; font-size: 12px; color: #464646;">
+                <tr>
+                    <td style="max-width: 150px; text-align: left"><b>PROJECT</b></td>
+                    <td colspan="20" style="max-width: 500px; text-align: left"><b>: <u>@ProjectName</u></b></td>
+                </tr>
+                <tr>
+                    <td style="max-width: 150px; text-align: left"><b>AS OF</b></td>
+                    <td colspan="20" style="max-width: 500px; text-align: left"><b>: <u>@ReportAsOfDate</u></b></td>
+                </tr>
+            </table>
+            <br />
+            <table style="font-family: Arial; font-size: 11px; color: #464646; border-spacing: 0; border-collapse: collapse;" class="tblAlternate">
+                <tr style="background-color: #f5f5f5">
+                    <td colspan="5" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 20px; border: .5pt solid black; background-color: #FFB6C1">Initial Budget</td>
+                    <td rowspan="2" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 20px; border: .5pt solid black;">Tower</td>
+                    <td colspan="4" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 20px; border: .5pt solid black; background-color: #b6d4ed">Sales Performance As Of @ReportAsOfDate</td>
+                    <td colspan="2" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 20px; border: .5pt solid black; background-color: #fff3b2">MKT 12X - Gold</td>
+                    <td rowspan="2" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 20px; border: .5pt solid black; background-color: #d5ffcc">% To Constr. Cost</td>
+                    <td colspan="4" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 20px; border: .5pt solid black; background-color: #f8ceff">Inventory As Of @BatchDate</td>
+                    <td colspan="4" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 20px; border: .5pt solid black; background-color: #adede4">Projected sales (100% Sold)</td>
+                </tr>
+                <tr style="background-color: #f5f5f5">
+                    <!--Initial Budget-->
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #FFB6C1">#Unit</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #FFB6C1">M2 (SGA)</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #FFB6C1">Rp/M2 (SGA)<br />
+                        (Mio)</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #FFB6C1">Rp/Unit<br />
+                        (Mio)</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #FFB6C1">Rp<br />
+                        (Bio)</td>
+
+                    <!--Sales Performance As Of @ReportAsOfDate-->
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #b6d4ed">#Unit</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #b6d4ed">M2</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #b6d4ed">Rp/M2<br />
+                        (Mio)</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #b6d4ed">Rp<br />
+                        (Bio)</td>
+
+                    <!--MKT 12X - Gold-->
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #fff3b2">Rp/M2<br />
+                        Mio)</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #fff3b2">Rp<br />
+                        (Bio)</td>
+
+                    <!--Inventory As Of @ReportAsOfDate-->
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #f8ceff">#Unit</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #f8ceff">M2</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #f8ceff">Rp/M2<br />
+                        (Mio)</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #f8ceff">Rp<br />
+                        (Bio)</td>
+
+                    <!--Projected sales (100% Sold)-->
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #adede4">#Unit</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #adede4">M2</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #adede4">Rp/M2<br />
+                        (Mio)</td>
+                    <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #adede4">Rp
+
+                        (Bio)</td>
+                </tr>
+
+                @ContentReport1
+
+                <tr>
+                    <td style="height: 20px;" class="defaultBGcolor"></td>
+                    <!--<td colspan="21" style="height: 20px; border: 0px solid #f5f5f5;"></td>-->
+                </tr>
+                <tr class="defaultBGcolor">
+                    <td colspan="4" style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor">Initial Sales & Marketing Expenses</td>
+                    <td style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor">@InitialSalesMarketingExpenses</td>
+                    <td colspan="4" style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor"><a target="_blank" href="@URLActualSalesMktExpense">Actual Sales & Marketing Expenses</a></td>
+                    <td style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor">@ActualSalesMarketingExpenses</td>
+                    <td colspan="11" style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: 0px solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor"></td>
+                </tr>
+                <tr class="defaultBGcolor">
+                    <td colspan="4" style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor"></td>
+                    <td style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor">@PctInitialSalesMarketingExpenses</td>
+                    <td colspan="4" style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor"></td>
+                    <td style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor">@PctActualSalesMarketingExpenses</td>
+                    <td colspan="11" style="text-align: right; font-weight: bold; padding: 5px 15px 5px 15px; border: 0px solid #f5f5f5; height: 20px; min-width: 50px" class="defaultBGcolor"></td>
+                </tr>
+
+            </table>
+
+            <!--Spacer-->
+            <table>
+                <tr>
+                    <td style="height: 20px;"></td>
+                </tr>
+            </table>
+
+            <table>
+                <tr>
+                    <td style="vertical-align: top">
+                        <!--ContentReport2-->
+                        <table style="font-family: Arial; font-size: 11px; color: #464646; border-spacing: 0; border-collapse: collapse;" class="tblAlternate">
+                            <tr style="background-color: #f5f5f5">
+                                <td rowspan="2" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 20px; border: .5pt solid black;">Tower</td>
+                                <td colspan="2" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 42px; border: .5pt solid black; background-color: #d9f993">Construction Cost<br />(Include Infra+Parking)</td>
+                                <td colspan="2" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 42px; border: .5pt solid black; background-color: #E8D6E2">Actual<br />Construction Cost</td>
+                                <td colspan="2" style="text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; height: 42px; border: .5pt solid black; background-color: #c9fff8">Projected Till Completion<br />(Include Infra+Parking)</td>
+
+                            </tr>
+                            <tr style="background-color: #f5f5f5">
+                                <!--Initial Budget-->
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #d9f993">Rp<br />(Mio)</td>
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #d9f993">Rp/M2<br />(Mio)</td>
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #E8D6E2">Rp<br />(Mio)</td>
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #E8D6E2">Rp/M2<br />(Mio)</td>
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #c9fff8">Rp<br />(Mio)</td>
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #c9fff8">Rp/M2<br />(Mio)</td>
+                            </tr>
+                            @ContentReport2
+                        </table>
+                    </td>
+                    <td style="width: 20px"></td>
+                    <td style="vertical-align: top">
+                        <!--ContentReport3-->
+                        <table style="font-family: Arial; font-size: 11px; color: #464646; border-spacing: 0; border-collapse: collapse;" class="tblAlternate">
+                            <tr style="background-color: #f5f5f5">
+                                <td colspan="4" style="height: 42px; text-align: center; font-weight: bold; padding: 5px 15px 5px 15px; border: .5pt solid black; background-color: #ffcaa3"><a target="_blank" href="@URLScheduleCollection">Collection<br />(Include VAT)</td>
+                            </tr>
+                            <tr style="background-color: #f5f5f5">
+                                <!--Schedule Collection-->
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #ffcaa3">Finance Type</td>
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #ffcaa3">Sales<br />(Mio)</td>
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #ffcaa3">Collection<br />(Mio)</td>
+                                <td style="text-align: center; padding: 5px 15px 5px 15px; border: .5pt solid black; height: 20px; min-width: 50px; background-color: #ffcaa3">% Collected</td></tr>
+                            @ContentReport3
+                        </table>
+                    </td>
+                </tr>
+            </table>
+
+
+        </div>
+    </form>
+</body>
+</html>

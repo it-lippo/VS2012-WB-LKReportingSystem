@@ -1,0 +1,6 @@
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\bin\LKReportingSystemExternal.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\bin\LKReportingSystemExternal.XmlSerializers.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\bin\LKReportingSystemExternal.pdb
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\obj\Release\LKReportingSystemExternal.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\obj\Release\LKReportingSystemExternal.pdb
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\obj\Release\LKReportingSystemExternal.XmlSerializers.dll

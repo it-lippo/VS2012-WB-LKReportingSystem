@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="CheckLoginAD">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="domainName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLoginADResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="CheckLoginADResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteSQLLoginService2">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="loginName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="deleteSQLLoginService2Response">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deleteSQLLoginService2Result">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckLoginADStatus">
+        <s:complexType />
+      </s:element>
+      <s:element name="CheckLoginADStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckLoginADStatusResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="CheckLoginADSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckLoginAD" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginADSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckLoginADResponse" />
+  </wsdl:message>
+  <wsdl:message name="deleteSQLLoginService2SoapIn">
+    <wsdl:part name="parameters" element="tns:deleteSQLLoginService2" />
+  </wsdl:message>
+  <wsdl:message name="deleteSQLLoginService2SoapOut">
+    <wsdl:part name="parameters" element="tns:deleteSQLLoginService2Response" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginADStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckLoginADStatus" />
+  </wsdl:message>
+  <wsdl:message name="CheckLoginADStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckLoginADStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="SQLServerServiceSoap">
+    <wsdl:operation name="CheckLoginAD">
+      <wsdl:input message="tns:CheckLoginADSoapIn" />
+      <wsdl:output message="tns:CheckLoginADSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteSQLLoginService2">
+      <wsdl:input message="tns:deleteSQLLoginService2SoapIn" />
+      <wsdl:output message="tns:deleteSQLLoginService2SoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckLoginADStatus">
+      <wsdl:input message="tns:CheckLoginADStatusSoapIn" />
+      <wsdl:output message="tns:CheckLoginADStatusSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="SQLServerServiceSoap" type="tns:SQLServerServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckLoginAD">
+      <soap:operation soapAction="http://tempuri.org/CheckLoginAD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSQLLoginService2">
+      <soap:operation soapAction="http://tempuri.org/deleteSQLLoginService2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLoginADStatus">
+      <soap:operation soapAction="http://tempuri.org/CheckLoginADStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="SQLServerServiceSoap12" type="tns:SQLServerServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CheckLoginAD">
+      <soap12:operation soapAction="http://tempuri.org/CheckLoginAD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteSQLLoginService2">
+      <soap12:operation soapAction="http://tempuri.org/deleteSQLLoginService2" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckLoginADStatus">
+      <soap12:operation soapAction="http://tempuri.org/CheckLoginADStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="SQLServerService">
+    <wsdl:port name="SQLServerServiceSoap" binding="tns:SQLServerServiceSoap">
+      <soap:address location="http://appdev2.lippokarawaci.co.id/LKGeneralWebServices/sqlserverservice.asmx" />
+    </wsdl:port>
+    <wsdl:port name="SQLServerServiceSoap12" binding="tns:SQLServerServiceSoap12">
+      <soap12:address location="http://appdev2.lippokarawaci.co.id/LKGeneralWebServices/sqlserverservice.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

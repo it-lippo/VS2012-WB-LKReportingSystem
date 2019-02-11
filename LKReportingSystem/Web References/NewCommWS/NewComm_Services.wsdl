@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Transfer_SDH_Burial_SO_To_Commission">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="scmCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="SONo" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="memberCode" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="SOTrxDate" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="SONetAmt" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="SOCommProcessDate" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="SOCommProcessUserName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Transfer_SDH_Burial_SO_To_CommissionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Transfer_SDH_Burial_SO_To_CommissionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessCommission">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="entityCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="scmCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="propCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="devCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bookNo" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="reqNo" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="unitPrice" type="s:decimal" />
+            <s:element minOccurs="1" maxOccurs="1" name="unitPriceOR" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ProcessCommissionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ProcessCommissionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCommPaid">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCommPaidResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getCommPaidResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCommUnprocessed">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="projectCode" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="getCommUnprocessedResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="getCommUnprocessedResult" type="s:decimal" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="Transfer_SDH_Burial_SO_To_CommissionSoapIn">
+    <wsdl:part name="parameters" element="tns:Transfer_SDH_Burial_SO_To_Commission" />
+  </wsdl:message>
+  <wsdl:message name="Transfer_SDH_Burial_SO_To_CommissionSoapOut">
+    <wsdl:part name="parameters" element="tns:Transfer_SDH_Burial_SO_To_CommissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="ProcessCommissionSoapIn">
+    <wsdl:part name="parameters" element="tns:ProcessCommission" />
+  </wsdl:message>
+  <wsdl:message name="ProcessCommissionSoapOut">
+    <wsdl:part name="parameters" element="tns:ProcessCommissionResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCommPaidSoapIn">
+    <wsdl:part name="parameters" element="tns:getCommPaid" />
+  </wsdl:message>
+  <wsdl:message name="getCommPaidSoapOut">
+    <wsdl:part name="parameters" element="tns:getCommPaidResponse" />
+  </wsdl:message>
+  <wsdl:message name="getCommUnprocessedSoapIn">
+    <wsdl:part name="parameters" element="tns:getCommUnprocessed" />
+  </wsdl:message>
+  <wsdl:message name="getCommUnprocessedSoapOut">
+    <wsdl:part name="parameters" element="tns:getCommUnprocessedResponse" />
+  </wsdl:message>
+  <wsdl:portType name="NewComm_Services1Soap">
+    <wsdl:operation name="Transfer_SDH_Burial_SO_To_Commission">
+      <wsdl:input message="tns:Transfer_SDH_Burial_SO_To_CommissionSoapIn" />
+      <wsdl:output message="tns:Transfer_SDH_Burial_SO_To_CommissionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ProcessCommission">
+      <wsdl:input message="tns:ProcessCommissionSoapIn" />
+      <wsdl:output message="tns:ProcessCommissionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCommPaid">
+      <wsdl:input message="tns:getCommPaidSoapIn" />
+      <wsdl:output message="tns:getCommPaidSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="getCommUnprocessed">
+      <wsdl:input message="tns:getCommUnprocessedSoapIn" />
+      <wsdl:output message="tns:getCommUnprocessedSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="NewComm_Services1Soap" type="tns:NewComm_Services1Soap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Transfer_SDH_Burial_SO_To_Commission">
+      <soap:operation soapAction="http://tempuri.org/Transfer_SDH_Burial_SO_To_Commission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessCommission">
+      <soap:operation soapAction="http://tempuri.org/ProcessCommission" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCommPaid">
+      <soap:operation soapAction="http://tempuri.org/getCommPaid" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCommUnprocessed">
+      <soap:operation soapAction="http://tempuri.org/getCommUnprocessed" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="NewComm_Services1Soap12" type="tns:NewComm_Services1Soap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Transfer_SDH_Burial_SO_To_Commission">
+      <soap12:operation soapAction="http://tempuri.org/Transfer_SDH_Burial_SO_To_Commission" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ProcessCommission">
+      <soap12:operation soapAction="http://tempuri.org/ProcessCommission" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCommPaid">
+      <soap12:operation soapAction="http://tempuri.org/getCommPaid" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCommUnprocessed">
+      <soap12:operation soapAction="http://tempuri.org/getCommUnprocessed" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="NewComm_Services1">
+    <wsdl:port name="NewComm_Services1Soap" binding="tns:NewComm_Services1Soap">
+      <soap:address location="http://10.122.2.4/NewCommWebServices/NewComm_Services.asmx" />
+    </wsdl:port>
+    <wsdl:port name="NewComm_Services1Soap12" binding="tns:NewComm_Services1Soap12">
+      <soap12:address location="http://10.122.2.4/NewCommWebServices/NewComm_Services.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
