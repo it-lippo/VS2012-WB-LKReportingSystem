@@ -1,6 +1,0 @@
-D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\bin\LKReportingSystemExternal.dll
-D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\bin\LKReportingSystemExternal.pdb
-D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\obj\Debug\LKReportingSystemExternal.dll
-D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\obj\Debug\LKReportingSystemExternal.pdb
-D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\obj\Debug\LKReportingSystemExternal.csprojResolveAssemblyReference.cache
-D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystemExternal\bin\Newtonsoft.Json.dll
