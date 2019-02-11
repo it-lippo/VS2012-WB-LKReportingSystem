@@ -1,0 +1,28 @@
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.dll
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.XmlSerializers.dll
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.pdb
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\log4net.xml
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.csprojResolveAssemblyReference.cache
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.dll
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.pdb
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.XmlSerializers.dll
+D:\SVN SourceCode\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\log4net.dll
+D:\SVN Source Code\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.dll
+D:\SVN Source Code\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.XmlSerializers.dll
+D:\SVN Source Code\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.pdb
+D:\SVN Source Code\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\log4net.xml
+D:\SVN Source Code\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.csprojResolveAssemblyReference.cache
+D:\SVN Source Code\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.dll
+D:\SVN Source Code\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.pdb
+D:\SVN Source Code\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.XmlSerializers.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.XmlSerializers.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\LKReportingSystem.pdb
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\log4net.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\Newtonsoft.Json.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\log4net.xml
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\bin\Newtonsoft.Json.xml
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.csprojResolveAssemblyReference.cache
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.dll
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.pdb
+D:\Source Code SVN\VS2012-WB-LKReportingSystem\LKReportingSystem\LKReportingSystem\obj\Release\LKReportingSystem.XmlSerializers.dll

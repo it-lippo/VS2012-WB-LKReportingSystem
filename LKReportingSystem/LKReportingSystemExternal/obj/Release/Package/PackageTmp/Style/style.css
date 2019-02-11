@@ -1,0 +1,52 @@
+﻿.form-control
+{
+    width: 100%;
+}
+
+.marbot5
+{
+    margin-bottom : 5px;
+}
+
+.martop5
+{
+    margin-top: 5px;
+}
+
+
+
+/* START LOADING GRIDVIEW */
+.modalLoading
+{
+    position: fixed;
+    z-index: 999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: Black;
+    opacity: 1;
+}
+.centerLoading
+{
+    z-index: 1000;
+    margin: 300px auto;
+    padding: 10px;
+    width: 270px;
+    background-color: #eee;
+    border-radius: 10px;
+}
+.centerLoading img
+{
+    width: 250px;
+}
+/* END LOADING GRIDVIEW */
+
+
+select.multiselect,
+select.multiselect + div.btn-group,
+select.multiselect + div.btn-group button.multiselect,
+select.multiselect + div.btn-group.open .multiselect-container{
+    width:100% !important;
+    text-align: left;
+}
